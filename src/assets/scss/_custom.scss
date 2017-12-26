@@ -19,3 +19,19 @@
 // 6. Pages
 // ---------
 @import 'components/pages/home';
+
+
+// shame
+.fw-feature-content {
+  height: rem-calc(500);
+  .fw-feature-content-text {
+    background: lighten($light-gray, 5);
+    padding: calc(#{$global-padding} * 4);
+  }
+  .fw-feature-content-image {
+    overflow: hidden;
+    img {
+      height: 100%;
+    }
+  }
+}

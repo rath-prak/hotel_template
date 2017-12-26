@@ -1,3 +1,11 @@
+.global-spacing {
+  margin: rem-calc(30) 0;
+}
+
+.global-spacing-2x {
+  margin: rem-calc(60) 0;
+}
+
 // full page header section
 .fp-header {
   position: relative;
