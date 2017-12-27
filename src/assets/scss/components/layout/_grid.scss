@@ -7,6 +7,14 @@
   margin: rem-calc(60) 0;
 }
 
+.global-padding {
+  padding: rem-calc(30) 0;
+}
+
+.global-padding-2x {
+  padding: calc( #{$global-padding} * 2 );
+}
+
 // Horizontal divider
 .horizontal-center {
   width: rem-calc(150);
