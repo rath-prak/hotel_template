@@ -31,12 +31,33 @@
 
 // Feature Content option 02
 .fw-feature-content-02 {
-  min-height: rem-calc(600);
   .fw-feature-content-text {
-    // background: lighten($light-gray, 5);
     background: rgba(255, 255, 255, 0.75);
     margin: calc(#{$global-margin} * 2);
     padding: calc(#{$global-padding} * 4);
+  }
+  h3 {
+    text-transform: uppercase;
+    margin: $global-margin;
+  }
+}
+
+// Feature Content option 03
+.fw-feature-content-03 {
+   min-height: rem-calc(400);
+  .fw-feature-content-text {
+    background: #ff781e;
+    padding: calc(#{$global-padding} * 4);
+    color: $white;
+  }
+  .fw-feature-content-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  h1 {
+    color: $white;
+    font-size: rem-calc(65);
   }
   h3 {
     text-transform: uppercase;

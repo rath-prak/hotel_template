@@ -16,12 +16,17 @@
 }
 
 // Horizontal divider
-.horizontal-center {
+.horizontal-center, .horizontal-center-white {
   width: rem-calc(150);
   height: rem-calc(2);
-  background: $dark-gray;
+  background: $black;
   margin: $global-margin auto;
 }
+
+.horizontal-center-white {
+  background: $white;
+}
+
 
 // full page header section
 .fp-header {
