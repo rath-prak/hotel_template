@@ -1,0 +1,45 @@
+// Feature Content option 01
+.fw-feature-content-01 {
+  min-height: rem-calc(400);
+  .fw-feature-content-text {
+    background: lighten($light-gray, 5);
+    padding: calc(#{$global-padding} * 4);
+  }
+  h3 {
+    text-transform: uppercase;
+    margin: $global-margin;
+  }
+}
+
+.fw-feature-content-image {
+  position: relative;
+  min-height: rem-calc(400);
+  .color-box {
+    position: absolute;
+    top: 30px;
+    right: rem-calc(30);
+    width: rem-calc(180);
+    height: rem-calc(200);
+    background: linear-gradient(-45deg, #faeb32, #ff781e);
+    padding: rem-calc(20);
+    color: $white;
+    p {
+      font-weight: 600;
+    }
+  }
+}
+
+// Feature Content option 02
+.fw-feature-content-02 {
+  min-height: rem-calc(600);
+  .fw-feature-content-text {
+    // background: lighten($light-gray, 5);
+    background: rgba(255, 255, 255, 0.75);
+    margin: calc(#{$global-margin} * 2);
+    padding: calc(#{$global-padding} * 4);
+  }
+  h3 {
+    text-transform: uppercase;
+    margin: $global-margin;
+  }
+}

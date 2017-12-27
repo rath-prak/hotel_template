@@ -1,9 +1,18 @@
+// Spacing
 .global-spacing {
   margin: rem-calc(30) 0;
 }
 
 .global-spacing-2x {
   margin: rem-calc(60) 0;
+}
+
+// Horizontal divider
+.horizontal-center {
+  width: rem-calc(150);
+  height: rem-calc(2);
+  background: $dark-gray;
+  margin: $global-margin auto;
 }
 
 // full page header section
