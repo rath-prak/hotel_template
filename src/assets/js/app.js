@@ -10,14 +10,14 @@ $(document).ready(function(){
   let $menuToggle = $('.menu-toggle');
   let $overlayMenu = $('.overlay-menu');
 
-  const tl = new TimelineMax({ delay:6, paused:true, reversed:true });
+  const tl = new TimelineMax({ delay:3, paused:true, reversed:true });
 
-  tl.to(site, 1, { x: '100%', ease: Power2.easeOut });
+  tl.to($overlayMenu, 1, { y: '0', ease: Power2.easeOut });
 
   $menuToggle.on('click', () => {
     setTimeout(function(){
         tl.reversed() ? tl.restart() : tl.reverse();
-      }, 600);
+      }, 200);
   })
 
 

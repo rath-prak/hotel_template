@@ -1,15 +1,13 @@
 // main navigation items
 
 .nav-wrapper {
+  position: absolute;
   width: 100%;
   display: flex;
   justify-content: center;
-  background: green;
 }
 
 #header {
-  // position: relative;
-  background: blue;
   z-index: 100;
   padding: rem-calc(20) rem-calc(15);
   display: flex;
@@ -18,7 +16,6 @@
 }
 
 .site-logo {
-  background: red;
   width: rem-calc(160);
   img {
     width: 100%;
@@ -26,15 +23,19 @@
 }
 
 .menu-toggle {
+  position: absolute;
+  top: rem-calc(20);
+  right: rem-calc(30);
   font-weight: 900;
   color: yellow;
   font-size: 20px;
   background: green;
   display: block;
+  cursor: pointer;
+  z-index: 1000;
 }
 
 #nav-main {
-  background: salmon;
   display: none;
   ul {
     display: flex;
@@ -49,30 +50,34 @@
   }
 }
 
-@media screen and (min-width: rem-calc(840)) {
-  #nav-main {
-    display: block;
-  }
-  .menu-toggle {
-    display: none;
-  }
-}
-
-
 // Overlay menu
 .overlay-menu-wrapper {
-      z-index: 100;
-  position: absolute;
+  z-index: 100;
+  position: fixed;
   top: 0;
   right: 0;
   overflow: hidden;
 
-  .overlay-menu {
 
+  .overlay-menu {
     padding-top: 100px;
-    width: 25vw;
+    width: 100vw;
     height: 100vh;
     background: pink;
-    transform: translateX(75%);
+    transform: translateY(-100%);
+  }
+}
+
+@media screen and (min-width: rem-calc(840)) {
+  #nav-main {
+    display: block;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .overlay-menu-wrapper {
+    display: none;
   }
 }
