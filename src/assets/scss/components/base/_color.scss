@@ -1,7 +1,9 @@
 $primary-color: #000;
 $secondary-color: #000;
-$accent-color: #000;
+$accent-color: $white;
+
+$reverse: $white;
 
 ::selection {
-  background: green;
+  background: $black;
 }

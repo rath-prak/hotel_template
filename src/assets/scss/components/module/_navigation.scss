@@ -22,19 +22,6 @@
   }
 }
 
-.menu-toggle {
-  position: absolute;
-  top: rem-calc(20);
-  right: rem-calc(30);
-  font-weight: 900;
-  color: yellow;
-  font-size: 20px;
-  background: green;
-  display: block;
-  cursor: pointer;
-  z-index: 1000;
-}
-
 #nav-main {
   display: none;
   ul {
@@ -52,19 +39,106 @@
 
 // Overlay menu
 .overlay-menu-wrapper {
-  z-index: 100;
+  z-index: 10;
   position: fixed;
   top: 0;
   right: 0;
   overflow: hidden;
-
+  transform: translateY(-100%);
 
   .overlay-menu {
     padding-top: 100px;
     width: 100vw;
     height: 100vh;
-    background: pink;
-    transform: translateY(-100%);
+    background: $accent-color;
+    opacity: 0.95;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .overlay-logo {
+      width: rem-calc(250);
+      img {
+        width: 100%;
+      }
+    }
+    ul {
+      margin: 0;
+      padding-top: rem-calc(30);
+      li {
+        list-style-type: none;
+        text-align: center;
+        margin-bottom: rem-calc(15);
+        a {
+          color: $black;
+          text-transform: uppercase;
+          font-size: rem-calc(24);
+        }
+      }
+    }
+  }
+}
+
+// Toggle menu
+$buttonWidth: 30px;
+$buttonHeight: 26px;
+$buttonColor: $reverse;
+$lineThickness: 4px;
+$transitionSpeed: .25s;
+$transitionEasing: ease-in-out;
+
+.menu-toggle {
+  position: relative;
+  position: absolute;
+  top: rem-calc(20);
+  right: rem-calc(30);
+  z-index: 1000;
+  display: block;
+  width: $buttonWidth;
+  height: $buttonHeight;
+
+  background: transparent;
+  border-top: $lineThickness solid;
+  border-bottom: $lineThickness solid;
+
+  color: $buttonColor;
+  font-size: 0;
+
+  transition: all $transitionSpeed $transitionEasing;
+
+  &:before,
+  &:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: $lineThickness;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    background: $buttonColor;
+
+    transform: translate(-50%, -50%);
+    transition: transform $transitionSpeed $transitionEasing;
+  }
+}
+
+button:hover {
+  color: lighten($buttonColor, 15%);
+}
+
+button.is-active {
+  border-color: transparent;
+
+  &:before {
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: $black;
+  }
+
+  &:after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+    background: $black;
   }
 }
 
