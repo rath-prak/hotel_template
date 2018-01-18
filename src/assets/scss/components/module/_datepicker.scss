@@ -1,0 +1,8 @@
+.datepicker-wrapper {
+  margin-top: rem-calc(60);
+  background: green;
+  .datepicker {
+    background: rbga(255, 255, 255, 0.5);
+    height: rem-calc(40);
+  }
+}

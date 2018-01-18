@@ -20,7 +20,7 @@
     right: rem-calc(30);
     width: rem-calc(180);
     height: rem-calc(200);
-    background: linear-gradient(-45deg, #faeb32, #ff781e);
+    background: $gradient;
     padding: rem-calc(20);
     color: $white;
     p {

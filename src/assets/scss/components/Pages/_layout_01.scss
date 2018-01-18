@@ -1,0 +1,59 @@
+.item-content {
+  border-bottom: 1px solid $light-gray;
+ .item-img {
+   min-width: rem-calc(220);
+   min-height: rem-calc(200);
+   background: url(../img/hotel-temp03.jpg) center center no-repeat;
+   background-size:  cover;
+ }
+ .item-text {
+   h6 {
+     text-transform: uppercase;
+     color: $dark-gray;
+     letter-spacing: 4px;
+   }
+ }
+}
+
+.item-sub-menu {
+  margin-bottom: rem-calc(30);
+  ul {
+    margin: 0;
+    li {
+      list-style-type: none;
+      padding: rem-calc(5);
+      font-weight: 400;
+      color: $dark-gray;
+      margin-left: 0;
+      background: #f1f1f1;
+      margin-bottom: rem-calc(3);
+      text-align: center;
+      a {
+        color: $black;
+      }
+    }
+    li:hover {
+      background: #e9e9e9;
+    }
+  }
+}
+
+.news-aside {
+  .thumbnail {
+    width: rem-calc(100);
+    min-height: rem-calc(70);
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .news-item-text {
+    h6 {
+      margin-bottom: 0;
+    }
+    p {
+      font-size: rem-calc(16);
+      color: $dark-gray;
+    }
+  }
+}

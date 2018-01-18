@@ -2,6 +2,7 @@
 // ---------
 
 .home-hero-wrapper {
+  position: relative;
   background: url(../img/hotel-background-01.jpg) center center no-repeat fixed;
   background-size:  cover;
 }
@@ -15,11 +16,41 @@
   align-items: center;
   color: $white;
   text-align: center;
-  
+
   h4 {
     text-transform: uppercase;
   }
-  
+
+}
+
+// datepicker
+// ----------
+
+.datepicker-wrapper {
+  display: flex;
+  width: 100%;
+  height: rem-calc(60);
+  background: $black;
+  opacity: 0.8;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  p, i {
+    text-transform: uppercase;
+    font-size: rem-calc(20);
+    font-weight: 600;
+    margin: 0;
+    line-height: rem-calc(60);
+  }
+  p {
+    padding-right: rem-calc(20);
+  }
+  .datepicker {
+    display: flex;
+    height: rem-calc(60);
+  }
 }
 
 @media screen and (min-width: 64em) {

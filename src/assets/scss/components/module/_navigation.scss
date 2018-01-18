@@ -7,6 +7,10 @@
   justify-content: center;
 }
 
+.nav-black-bg {
+  background: $transparent-black;
+}
+
 #header {
   z-index: 100;
   padding: rem-calc(20) rem-calc(15);
@@ -96,6 +100,7 @@ $transitionEasing: ease-in-out;
   display: block;
   width: $buttonWidth;
   height: $buttonHeight;
+  cursor: pointer;
 
   background: transparent;
   border-top: $lineThickness solid;

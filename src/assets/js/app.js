@@ -8,6 +8,7 @@ window.$ = $;
 
 $(document).ready(function(){
 
+  // Navigation menu
   $('button').on('click', function() {
     $(this).toggleClass('is-active');
   });
@@ -24,6 +25,7 @@ $(document).ready(function(){
         tl.reversed() ? tl.restart() : tl.reverse();
       }, 200);
   })
+
 
 
 

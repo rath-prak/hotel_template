@@ -14,7 +14,8 @@
 @import 'components/module/buttons';
 @import 'components/module/fw-feature-content';
 @import 'components/module/fw-text-content';
-
+@import 'components/module/datepicker';
+@import 'components/module/fp-header-img';
 // 5. State
 // ---------
 
@@ -22,3 +23,4 @@
 // 6. Pages
 // ---------
 @import 'components/pages/home';
+@import 'components/pages/layout_01';

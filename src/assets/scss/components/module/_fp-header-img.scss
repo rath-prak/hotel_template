@@ -1,0 +1,15 @@
+.fw-header-img-wrapper {
+  width: 100%;
+  height: rem-calc(400);
+  background: url(../img/hotel-temp01a.jpg) center center no-repeat;
+  background-size:  cover;
+  color: $white;
+  padding: rem-calc(30) 0;
+  .content {
+    margin-top: rem-calc(60);
+  }
+  p {
+    font-size: rem-calc(22);
+    font-weight: 400;
+  }
+}
